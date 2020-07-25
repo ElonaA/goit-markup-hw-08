@@ -1,0 +1,16 @@
+body {
+    padding-top: $fixed-header-mobile;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $primary-title-color;
+
+    background-color: $primary-white-color;
+
+    @include breakpoint(tablet) {
+        padding-top: $fixed-header-tablet;
+    }
+}

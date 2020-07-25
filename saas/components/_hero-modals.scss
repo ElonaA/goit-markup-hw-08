@@ -1,0 +1,443 @@
+.hero {
+    @media only screen and (max-width: 480px) {
+
+        position: relative;
+        max-width: 480px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        @include webp-background($img: 'header-mobile');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 480px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 480px),
+        only screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+        only screen and (min-resolution: 192dpi) and (max-width: 480px),
+        only screen and (min-resolution: 2dppx) and (max-width: 480px) {
+            @include webp-background($img: 'header-mobile@2x');
+
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 480px),
+        only screen and (min--moz-device-pixel-ratio: 3) and (max-width: 480px),
+        only screen and (-o-min-device-pixel-ratio: 3/1) and (max-width: 480px),
+        only screen and (min-device-pixel-ratio: 3) and (max-width: 480px),
+        only screen and (min-resolution: 288dpi) and (max-width: 480px),
+        only screen and (min-resolution: 3dppx) and (max-width: 480px) {
+
+            @include webp-background($img: 'header-mobile@3x');
+        }
+
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+        position: relative;
+
+        max-width: 768px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        @include webp-background($img: 'header-tablet');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 768px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 768px),
+        only screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+        only screen and (min-resolution: 192dpi) and (max-width: 768px),
+        only screen and (min-resolution: 2dppx) and (max-width: 768px) {
+            @include webp-background($img: 'header-tablet@2x');
+
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 768px),
+        only screen and (min--moz-device-pixel-ratio: 3) and (max-width: 768px),
+        only screen and (-o-min-device-pixel-ratio: 3/1) and (max-width: 768px),
+        only screen and (min-device-pixel-ratio: 3) and (max-width: 768px),
+        only screen and (min-resolution: 288dpi) and (max-width: 768px),
+        only screen and (min-resolution: 3dppx) and (max-width: 768px) {
+            @include webp-background($img: 'header-tablet@3x');
+
+        }
+
+    }
+
+    @media only screen and (min-width: 769px) {
+        position: relative;
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        @include webp-background($img: 'header-desktop');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1140px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1140px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1140px),
+        only screen and (min-device-pixel-ratio: 2) and (max-width: 1140px),
+        only screen and (min-resolution: 192dpi) and (max-width: 1140px),
+        only screen and (min-resolution: 2dppx) and (max-width: 1140px) {
+            @include webp-background($img: 'header-desktop@2x');
+
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 1140px),
+        only screen and (min--moz-device-pixel-ratio: 3) and (max-width: 1140px),
+        only screen and (-o-min-device-pixel-ratio: 3/1) and (max-width: 1140px),
+        only screen and (min-device-pixel-ratio: 3) and (max-width: 1140px),
+        only screen and (min-resolution: 288dpi) and (max-width: 1140px),
+        only screen and (min-resolution: 3dppx) and (max-width: 1140px) {
+            @include webp-background($img: 'header-desktop@3x');
+
+        }
+
+    }
+
+    &-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+
+        @include breakpoint(tablet) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-title {
+        margin-bottom: 30px;
+        margin-top: 0px;
+
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $primary-white-color;
+
+        @media screen and (max-width: 375px) {
+            margin-bottom: 30px;
+            margin-top: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 2.1;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $primary-white-color;
+        }
+
+
+
+        @include breakpoint(desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.order-service {
+    $h: 50px;
+    min-width: 200px;
+    padding: 0 32px;
+    /* гарантия отступов при увеличении длинны текста*/
+
+    height: $h;
+    /* центрирование одной линии текста по вертикали */
+    line-height: $h;
+    /* центрирование одной линии текста по вертикали */
+    /* текст */
+    text-align: center;
+    /* центрирование  по горзонтали */
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    /* цвета */
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    /* украшения   */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    @include transitions(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+.submit-button {
+    @extend .order-service;
+}
+
+/*Modal*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 93px 15px;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    @include transitions(opacity);
+    z-index: 9999;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.is-hidden .modal {
+        @include breakpoint(tablet) {
+            transform: translate(-50%, 0) scale(1.1);
+        }
+
+    }
+}
+
+.modal {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
+    background: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    @include breakpoint(tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 450px;
+        width: 100%;
+        max-height: 609px;
+
+        transform: translate(-50%, -50%) scale(1);
+        @include transitions (transform);
+    }
+
+    @include breakpoint(desktop) {
+        min-width: 528px;
+        width: 100%;
+        max-height: 581px;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+
+        color: #212121;
+    }
+}
+
+.form {
+    @media screen and (max-width: 767px) {
+        max-width: 370px;
+        margin-top: 30px;
+    }
+
+    @include breakpoint(desktop) {
+        width: 448px;
+        margin-top: 30px;
+    }
+
+
+    &-field {
+        position: relative;
+        display: block;
+        margin-bottom: 28px;
+    }
+
+    &-label {
+        position: absolute;
+        top: 50%;
+        left: 42px;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: $text-color;
+
+        transform: translateY(-50%);
+        @include transitions(transform);
+    }
+
+    &-input {
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        padding: 12px 42px;
+        background-color: $primary-white-color;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline-color: $accent-color;
+    }
+
+    &-icon {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        color: $color-button;
+        transform: translateY(-50%);
+    }
+
+    &-field:focus-within>&-icon {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+
+    &-field:focus-within>&-label,
+    &-input:not(:placeholder-shown)+&-label {
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: $accent-color;
+        transform: translate(-24px, -37px);
+    }
+
+    &-field:focus-within>.comment-label,
+    &-input:not(:placeholder-shown)+.comment-label {
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: var($accent-color);
+        transform: translateY(-37px);
+    }
+}
+
+.comment-label {
+    top: 16px;
+    left: 16px;
+    position: absolute;
+}
+
+.comment-input {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin: 0;
+
+    resize: none;
+}
+
+.submit-button {
+    padding: 0 55px;
+}
+
+.acceptance {
+    @include centered-item;
+
+    &-label {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $text-color;
+
+        @include breakpoint(desktop) {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    }
+
+
+}
+
+.privacy {
+    display: inline-block;
+    margin-bottom: 30px;
+
+    &-link {
+        color: $accent-color;
+        text-decoration: underline;
+    }
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &-icon {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 8px;
+
+        border: 2px solid $primary-title-color;
+        border-radius: 2px;
+        @include transitions (transform);
+    }
+
+    &:checked+&-icon {
+        transform: scale(1.2);
+        border-color: transparent;
+        border-radius: 2px;
+        background-color: $accent-color;
+    }
+}
+
+.icon-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+
+    fill: #000000;
+    background: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,42 @@
+//Flex container position center
+@mixin centered-item($align-type : center) {
+    display: flex;
+    align-items: $align-type;
+}
+
+//Transition
+@mixin transitions($type : color) {
+    transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//Add WebP format
+@mixin webp-background($img, $type: '.jpg') {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url('../image/#{$img}.webp');
+
+    .no-webp & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+        url('../image/#{$img}#{$type}');
+    }
+}
+
+// Add breakpoints
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media only screen and (min-width: 1170px) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point==mobile {
+        @media only screen and (min-width: 480px) {
+            @content;
+        }
+    }
+}
