@@ -330,9 +330,9 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1200px;
   }
 }
 
@@ -342,7 +342,7 @@ body {
   height: auto;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .logo {
     width: 153px;
     height: auto;
@@ -553,7 +553,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .site-nav {
     margin-left: 85px;
   }
@@ -641,7 +641,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .contact {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -689,7 +689,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .contact-link + .contact-link {
     margin-top: 0;
     margin-left: 30px;
@@ -717,7 +717,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .mail, .phone {
     font-size: 14px;
     line-height: 1.12;
@@ -832,7 +832,7 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1140px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .portfolio-title {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -863,7 +863,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .portfolio-text {
     padding: 63px 24px;
   }
@@ -914,7 +914,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .filter-list {
     margin-bottom: 50px;
   }
@@ -953,7 +953,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .project {
     margin: 15px;
     width: calc((100% - 3 * 30px) / 3);
@@ -1016,7 +1016,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .footer.container {
     padding: 0;
     -webkit-box-orient: horizontal;
@@ -1054,7 +1054,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .footer-container {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1204,7 +1204,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .subscribe-container {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1229,7 +1229,7 @@ body {
           justify-content: center;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .subscribe-form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1315,7 +1315,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .subscribe-input {
     margin-bottom: 0;
     width: 358px;
