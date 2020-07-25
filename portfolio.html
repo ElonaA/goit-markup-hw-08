@@ -13,36 +13,38 @@
 <body class="portfolio-body">
   <!--Шапка сайта-->
   <header class="main-header">
-    <div class="container header-nav">
-      <nav class="main-nav">
-        <a href="./index.html" lang="en"> <svg class="logo" width="141" height="28">
-            <use href="./image/icon-sprite.svg#logo-header"></use>
-          </svg></a>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close-menu" href="./image/icon-sprite.svg#icon-close-menu"></use>
-            <use class="icon-menu" href="./image/icon-sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>
+    <div class="container header-nav ">
+
+      <a href="./index.html" lang="en"> <svg class="logo" width="141" height="28">
+          <use href="./image/icon-sprite.svg#logo-header"></use>
+        </svg></a>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-close-menu" href="./image/icon-sprite.svg#icon-close-menu"></use>
+          <use class="icon-menu" href="./image/icon-sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav class="main-nav">
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item"><a href="./index.html" class="link ">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
             <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
 
           <div class="contact">
-            <a class="contact-link mail" href="mailto:info@devstudio.com"><svg class="contact-icon" width="16"
+            <a class="contact-link mail" href="mailto:info@devstudio.com"><svg class="contact-icon mail" width="16"
                 height="11">
                 <use href="./image/icon-sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a>
             <a class="contact-link phone" href="tel:+380961111111">
-              <svg class="contact-icon" width="10" height="15">
+              <svg class="contact-icon phone" width="10" height="15">
                 <use href="./image/icon-sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></div>
-        </div>
+      </div>
       </nav>
     </div>
   </header>
@@ -70,7 +72,23 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio1.jpg" width="450" height="294" alt="Пример работы Технокряк" />
+                <picture>
+                  <source srcset="./image/mob-tehnocrak.jpg 1x, ./image/mob-tehnocrak@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-tehnocrak.webp 1x, ./image/mob-tehnocrak@2x.webp 2x" type="image/webp"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/desk-tehnocrak.jpg 1x, ./image/desk-tehnocrak@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-tehnocrak.webp 1x, ./image/desk-tehnocrak@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1140px)" />
+
+                  <source srcset="./image/tabl-tehnocrak.jpg 1x, ./image/tabl-tehnocrak@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-tehnocrak.webp 1x, ./image/tabl-tehnocrak@2x.webp 2x" type="image/webp"
+                    media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-tehnocrak.jpg" width="450" height="294" alt="Пример работы Технокряк" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -88,8 +106,24 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio2.jpg" width="450" height="294"
-                  alt="Пример работы Постер New Orlean vs Golden Star" />
+                <picture>
+                  <source srcset="./image/mob-Poster-Golden-Star.jpg 1x, ./image/mob-Poster-Golden-Star@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-Poster-Golden-Star.webp 1x, ./image/mob-Poster-Golden-Star@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source srcset="./image/desk-Poster-Golden-Star.jpg 1x, ./image/desk-Poster-Golden-Star@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-Poster-Golden-Star.webp 1x, ./image/desk-Poster-Golden-Star@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source srcset="./image/tabl-Poster-Golden-Star.jpg 1x, ./image/tabl-Poster-Golden-Star@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-Poster-Golden-Star.webp 1x, ./image/tabl-Poster-Golden-Star@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Poster-Golden-Star.jpg" width="450" height="294"
+                    alt="Пример работы Постер New Orlean vs Golden Star" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -107,7 +141,23 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio3.jpg" width="450" height="294" alt="Пример работы Ресторан Seafood" />
+                <picture>
+                  <source srcset="./image/mob-restaurant-Seafood.jpg 1x, ./image/mob-restaurant-Seafood@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-restaurant-Seafood.webp 1x, ./image/mob-restaurant-Seafood@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source srcset="./image/desk-estaurant-Seafood.jpg 1x, ./image/desk-estaurant-Seafood@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-estaurant-Seafood.webp 1x, ./image/desk-estaurant-Seafood@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+                  <source srcset="./image/tabl-restaurant-Seafood.jpg 1x, ./image/tabl-restaurant-Seafood@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-restaurant-Seafood.webp 1x, ./image/tabl-restaurant-Seafood@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-restaurant-Seafood.jpg" width="450" height="294"
+                    alt="Пример работы Ресторан Seafood" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -125,7 +175,22 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio4.jpg" width="450" height="294" alt="Пример работы Проект Prime" />
+                <picture>
+                  <source srcset="./image/mob-Project-Prime.jpg 1x, ./image/mob-Project-Prime@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-Project-Prime.webp 1x, ./image/mob-Project-Prime@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source srcset="./image/desk-Project-Prime.jpg 1x, ./image/desk-Project-Prime@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-Project-Prime.webp 1x, ./image/desk-Project-Prime@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+                  <source srcset="./image/tabl-Project-Prime.jpg 1x, ./image/tabl-Project-Prime@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-Project-Prime.webp 1x, ./image/tabl-Project-Prime@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Project-Prime.jpg" width="450" height="294" alt="Пример работы Проект Prime" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -143,7 +208,23 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio5.jpg" width="450" height="294" alt="Пример работы Проект Boxes" />
+                <picture>
+                  <source srcset="./image/mob-Project-Boxes.jpg 1x, ./image/mob-Project-Boxes@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-Project-Boxes.webp 1x, ./image/mob-Project-Boxes@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source srcset="./image/desk-Project-Boxes.jpg 1x, ./image/desk-Project-Boxes@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-Project-Boxes.webp 1x, ./image/desk-Project-Boxes@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source srcset="./image/tabl-Project-Boxes.jpg 1x, ./image/tabl-Project-Boxes@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-Project-Boxes.webp 1x, ./image/tabl-Project-Boxes@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Project-Boxes.jpg" width="450" height="294" alt="Пример работы Проект Boxes" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -161,8 +242,30 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio6.jpg" width="450" height="294"
-                  alt="Пример работы Inspiration has no Borders" />
+                <picture>
+                  <source
+                    srcset="./image/mob-Inspiration-has-no-Borders.jpg 1x, ./image/mob-Inspiration-has-no-Borders@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source
+                    srcset="./image/mob-Inspiration-has-no-Borders.webp 1x, ./image/mob-Inspiration-has-no-Borders@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source
+                    srcset="./image/desk-Inspiration-has-no-Borders.jpg 1x, ./image/desk-Inspiration-has-no-Borders@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source
+                    srcset="./image/desk-Inspiration-has-no-Borders.webp 1x, ./image/desk-Inspiration-has-no-Borders@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source
+                    srcset="./image/tabl-Inspiration-has-no-Borders.jpg 1x, ./image/tabl-Inspiration-has-no-Borders@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source
+                    srcset="./image/tabl-Inspiration-has-no-Borders.webp 1x, ./image/tabl-Inspiration-has-no-Borders@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Inspiration-has-no-Borders.jpg" width="450" height="294"
+                    alt="Пример работы Inspiration has no Borders" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -180,8 +283,30 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio7.jpg" width="450" height="294"
-                  alt="Пример работы Издание Limited Edition" />
+                <picture>
+                  <source
+                    srcset="./image/mob-Edition-Limited-Edition.jpg 1x, ./image/mob-Edition-Limited-Edition@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source
+                    srcset="./image/mob-Edition-Limited-Edition.webp 1x, ./image/mob-Edition-Limited-Edition@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source
+                    srcset="./image/desk-Edition-Limited-Edition.jpg 1x, ./image/desk-Edition-Limited-Edition@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source
+                    srcset="./image/desk-Edition-Limited-Edition.webp 1x, ./image/desk-Edition-Limited-Edition@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source
+                    srcset="./image/tabl-Edition-Limited-Edition.jpg 1x, ./image/tabl-Edition-Limited-Edition@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source
+                    srcset="./image/tabl-Edition-Limited-Edition.webp 1x, ./image/tabl-Edition-Limited-Edition@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Edition-Limited-Edition.jpg" width="450" height="294"
+                    alt="Пример работы Издание Limited Edition" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -199,7 +324,23 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio8.jpg" width="450" height="294" alt="Пример работы Проект LAB" />
+                <picture>
+                  <source srcset="./image/mob-Project-LAB.jpg 1x, ./image/mob-Project-LAB@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-Project-LAB.webp 1x, ./image/mob-Project-LAB@2x.webp 2x" type="image/webp"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/desk-Project-LAB.jpg 1x, ./image/desk-Project-LAB@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-Project-LAB.webp 1x, ./image/desk-Project-LAB@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source srcset="./image/tabl-Project-LAB.jpg 1x, ./image/tabl-Project-LAB@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-Project-LAB.webp 1x, ./image/tabl-Project-LAB@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Project-LAB.jpg" width="450" height="294" alt="Пример работы Проект LAB" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -217,7 +358,24 @@
           <li class="project">
             <a href="#">
               <div class="portfolio-thumb">
-                <img src="./image/portfolio9.jpg" width="450" height="294" alt="Пример работы Growing Business" />
+                <picture>
+                  <source srcset="./image/mob-Growing-Business.jpg 1x, ./image/mob-Growing-Business@2x.jpg 2x"
+                    media="(max-width: 576px)" />
+                  <source srcset="./image/mob-Growing-Business.webp 1x, ./image/mob-Growing-Business@2x.webp 2x"
+                    type="image/webp" media="(max-width: 576px)" />
+                  <source srcset="./image/desk-Growing-Business.jpg 1x, ./image/desk-Growing-Business@2x.jpg 2x"
+                    media="(min-width: 1140px)" />
+                  <source srcset="./image/desk-Growing-Business.webp 1x, ./image/desk-Growing-Business@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1140px)" />
+
+                  <source srcset="./image/tabl-Growing-Business.jpg 1x, ./image/tabl-Growing-Business@2x.jpg 2x"
+                    media="(min-width: 577px)" />
+                  <source srcset="./image/tabl-Growing-Business.webp 1x, ./image/tabl-Growing-Business@2x.webp 2x"
+                    type="image/webp" media="(min-width: 577px)" />
+
+                  <img src="./image/tabl-Growing-Business.jpg" width="450" height="294"
+                    alt="Пример работы Growing Business" />
+                </picture>
                 <span class="portfolio-overlay">
                   <p class="portfolio-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error excepturi consequuntur
@@ -239,42 +397,45 @@
   <footer class="footer-main">
     <!--Контактная информация в подвале-->
     <div class="footer container">
-      <div class="footer-container">
-        <a href="./index.html" lang="en"> <svg class="logo" width="153" height="31">
-            <use href="./image/icon-sprite.svg#logo-footer"></use>
-          </svg></a>
-        <address class="addres"><a class="addres" href="https://goo.gl/maps/tJwyNjjRUS4CusDj8" target="_blank"
-            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></address>
-        <address class="contact-footer">
-          <a href="mailto:info@devstudio.com" class="mail-footer">info@devstudio.com</a> <br />
-          <a href="tel:+380961111111" class="phone-footer">+38 096 111 11 11</a>
-        </address>
+      <div class="container-tablet">
+        <div class="footer-container">
+          <a href="./index.html" lang="en"> <svg class="logo" width="153" height="31">
+              <use href="./image/icon-sprite.svg#logo-footer"></use>
+            </svg></a>
+          <address class="addres"><a class="addres" href="https://goo.gl/maps/tJwyNjjRUS4CusDj8" target="_blank"
+              rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></address>
+          <address class="contact-footer">
+            <a href="mailto:info@devstudio.com" class="mail-footer">info@devstudio.com</a> <br />
+            <a href="tel:+380961111111" class="phone-footer">+38 096 111 11 11</a>
+          </address>
+        </div>
+        <div class="join-container">
+          <b class="join">Присоединяйтесь</b>
+          <ul class="social-footer-list list">
+            <li class="social-footer">
+              <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
+                  <use href="./image/icon-sprite.svg#icon-instagram-footer"></use>
+                </svg></a>
+            </li>
+            <li class="social-footer">
+              <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
+                  <use href="./image/icon-sprite.svg#icon-twitter-footer"></use>
+                </svg></a>
+            </li>
+            <li class="social-footer">
+              <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
+                  <use href="./image/icon-sprite.svg#icon-facebook-footer"></use>
+                </svg></a>
+            </li>
+            <li class="social-footer">
+              <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
+                  <use href="./image/icon-sprite.svg#icon-linkedin-footer"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="join-container">
-        <b class="join">Присоединяйтесь</b>
-        <ul class="social-footer-list list">
-          <li class="social-footer">
-            <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
-                <use href="./image/icon-sprite.svg#icon-instagram-footer"></use>
-              </svg></a>
-          </li>
-          <li class="social-footer">
-            <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
-                <use href="./image/icon-sprite.svg#icon-twitter-footer"></use>
-              </svg></a>
-          </li>
-          <li class="social-footer">
-            <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
-                <use href="./image/icon-sprite.svg#icon-facebook-footer"></use>
-              </svg></a>
-          </li>
-          <li class="social-footer">
-            <a class="social-footer-link" href="#"><svg class="social-footer-icon" width="44" height="44">
-                <use href="./image/icon-sprite.svg#icon-linkedin-footer"></use>
-              </svg></a>
-          </li>
-        </ul>
-      </div>
+
       <div class="subscribe-container">
         <b class="subscribe">Подпишитесь на рассылку</b>
         <form class="form-footer">
@@ -291,6 +452,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
