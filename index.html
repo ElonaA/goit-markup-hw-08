@@ -13,18 +13,20 @@
 <body>
   <!--Шапка сайта-->
   <header class="main-header">
-    <div class="container header-nav">
-      <nav class="main-nav">
-        <a href="./index.html" lang="en"> <svg class="logo" width="141" height="28">
-            <use href="./image/icon-sprite.svg#logo-header"></use>
-          </svg></a>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close-menu" href="./image/icon-sprite.svg#icon-close-menu"></use>
-            <use class="icon-menu" href="./image/icon-sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>
+    <div class="container header-nav ">
+
+      <a href="./index.html" lang="en"> <svg class="logo" width="141" height="28">
+          <use href="./image/icon-sprite.svg#logo-header"></use>
+        </svg></a>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-close-menu" href="./image/icon-sprite.svg#icon-close-menu"></use>
+          <use class="icon-menu" href="./image/icon-sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav class="main-nav">
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -42,7 +44,7 @@
                 <use href="./image/icon-sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></div>
-        </div>
+      </div>
       </nav>
     </div>
   </header>
@@ -155,19 +157,40 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work item">
-            <img src="./image/work1.jpg" width="370" height="294" alt="Десктопные приложения" />
+            <picture>
+              <source srcset="./image/work.webp 1x
+              ,./image/work@2x.webp 2x" type="image/webp" />
+
+              <img srcset="./image/work.jpg 1x,
+               ./image/work@2x.jpg 2x" src="./image/work.jpg" alt="Десктопные приложения"
+                sizes="(min-width: 960px) 25vw, 100vw" />
+            </picture>
             <span class="work-overlay">
               <h3 class="work-title">Десктопные приложения</h3>
             </span>
           </li>
           <li class="work item">
-            <img src="./image/work2.jpg" width="370" height="294" alt="Мобильные приложения" />
+            <picture>
+              <source srcset="./image/work2.webp 1x,
+                            ./image/work2@2x.webp 2x" type="image/webp" />
+
+              <img srcset="./image/work2.jpg 1x,
+                          ./image/work2@2x.jpg 2x" src="./image/work2.jpg" alt="Мобильные приложения"
+                sizes="(min-width: 960px) 25vw, 100vw" />
+            </picture>
             <span class="work-overlay">
               <h3 class="work-title">Мобильные приложения</h3>
             </span>
           </li>
           <li class="work item">
-            <img src="./image/work3.jpg" width="370" height="294" alt="Дизайнерские решения" />
+            <picture>
+              <source srcset="./image/work3.webp 1x,
+                              ./image/work3@2x.webp 2x" type="image/webp" />
+
+              <img srcset="./image/work3.jpg 1x,
+                          ./image/work3@2x.jpg 2x" src="./image/work3.jpg" alt="Дизайнерские решения"
+                sizes="(min-width: 960px) 25vw, 100vw" />
+            </picture>
             <span class="work-overlay">
               <h3 class="work-title">Дизайнерские решения</h3>
             </span>
@@ -183,7 +206,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team item">
-              <img src="./image/img.jpg" class="team-image" width="450" height="320" alt="Фото Николай Кучеренко" />
+              <picture>
+                <source srcset="./image/mob-team.jpg 1x, ./image/mob-team@2x.jpg 2x" media="(max-width: 576px)" />
+                <source srcset="./image/mob-team.webp 1x, ./image/mob-team@2x.webp 2x" type="image/webp"
+                  media="(max-width: 576px)" />
+                <source srcset="./image/desktop-team.jpg 1x, ./image/desktop-team@2x.jpg 2x"
+                  media="(min-width: 1140px)" />
+                <source srcset="./image/desktop-team.webp 1x, ./image/desktop-team@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1140px)" />
+
+                <source srcset="./image/tablet-team.jpg 1x, ./image/tablet-team@2x.jpg 2x" media="(min-width: 577px)" />
+                <source srcset="./image/tablet-team.webp 1x, ./image/tablet-team@2x.webp 2x" type="image/webp"
+                  media="(min-width: 577px)" />
+
+                <img src="./image/tablet-team.jpg" class="team-image" width="450" height="320"
+                  alt="Фото Николай Кучеренко" />
+              </picture>
               <h3 class="team-title">Николай Кучеренко</h3>
               <p class="team-text">Product Designer</p>
               <ul class="social-list list">
@@ -210,7 +248,23 @@
               </ul>
             </li>
             <li class="team item">
-              <img src="./image/img(1).jpg" class="team-image" width="450" height="320" alt="Фото Ольга Иванова" />
+              <picture>
+                <source srcset="./image/mob-team2.jpg 1x, ./image/mob-team2@2x.jpg 2x" media="(max-width: 576px)" />
+                <source srcset="./image/mob-team2.webp 1x, ./image/mob-team2@2x.webp 2x" type="image/webp"
+                  media="(max-width: 576px)" />
+                <source srcset="./image/desktop-team2.jpg 1x, ./image/desktop-team2@2x.jpg 2x"
+                  media="(min-width: 1140px)" />
+                <source srcset="./image/desktop-team2.webp 1x, ./image/desktop-team2@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1140px)" />
+
+                <source srcset="./image/tablet-team2.jpg 1x, ./image/tablet-team2@2x.jpg 2x"
+                  media="(min-width: 577px)" />
+                <source srcset="./image/tablet-team2.webp 1x, ./image/tablet-team2@2x.webp 2x" type="image/webp"
+                  media="(min-width: 577px)" />
+
+                <img src="./image/tablet-team2.jpg" class="team-image" width="450" height="320"
+                  alt="Фото Ольга Иванова" />
+              </picture>
               <h3 class="team-title">Ольга Иванова</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="social-list list">
@@ -237,7 +291,23 @@
               </ul>
             </li>
             <li class="team item">
-              <img src="./image/img(2).jpg" class="team-image" width="450" height="320" alt="Фото Андрей Шевченко" />
+              <picture>
+                <source srcset="./image/mob-team3.jpg 1x, ./image/mob-team3@2x.jpg 2x" media="(max-width: 576px)" />
+                <source srcset="./image/mob-team3.webp 1x, ./image/mob-team3@2x.webp 2x" type="image/webp"
+                  media="(max-width: 576px)" />
+                <source srcset="./image/desktop-team3.jpg 1x, ./image/desktop-team3@2x.jpg 2x"
+                  media="(min-width: 1140px)" />
+                <source srcset="./image/desktop-team3.webp 1x, ./image/desktop-team3@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1140px)" />
+
+                <source srcset="./image/tablet-team3.jpg 1x, ./image/tablet-team3@2x.jpg 2x"
+                  media="(min-width: 577px)" />
+                <source srcset="./image/tablet-team3.webp 1x, ./image/tablet-team3@2x.webp 2x" type="image/webp"
+                  media="(min-width: 577px)" />
+
+                <img src="./image/tablet-team3.jpg" class="team-image" width="450" height="320"
+                  alt="Фото Андрей Шевченко" />
+              </picture>
               <h3 class="team-title">Андрей Шевченко</h3>
               <p class="team-text">Marketing</p>
               <ul class="social-list list">
@@ -264,7 +334,23 @@
               </ul>
             </li>
             <li class="team item">
-              <img src="./image/img(3).jpg" class="team-image" width="270" height="260" alt="Фото Иван Николаев" />
+              <picture>
+                <source srcset="./image/mob-team4.jpg 1x, ./image/mob-team4@2x.jpg 2x" media="(max-width: 576px)" />
+                <source srcset="./image/mob-team4.webp 1x, ./image/mob-team4@2x.webp 2x" type="image/webp"
+                  media="(max-width: 576px)" />
+                <source srcset="./image/desktop-team4.jpg 1x, ./image/desktop-team4@2x.jpg 2x"
+                  media="(min-width: 1140px)" />
+                <source srcset="./image/desktop-team4.webp 1x, ./image/desktop-team4@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1140px)" />
+
+                <source srcset="./image/tablet-team4.jpg 1x, ./image/tablet-team4@2x.jpg 2x"
+                  media="(min-width: 577px)" />
+                <source srcset="./image/tablet-team4.webp 1x, ./image/tablet-team4@2x.webp 2x" type="image/webp"
+                  media="(min-width: 577px)" />
+
+                <img src="./image/tablet-team4.jpg" class="team-image" width="450" height="320"
+                  alt="Фото Иван Николаев" />
+              </picture>
               <h3 class="team-title">Иван Николаев</h3>
               <p class="team-text">UI Designer</p>
               <ul class="social-list list">
