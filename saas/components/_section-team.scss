@@ -36,6 +36,10 @@
 .section-team {
     @extend .section-advantages;
     padding-bottom: 60px;
+
+    @include breakpoint(tablet) {
+        padding-bottom: 94px;
+    }
 }
 
 .section-team>.section-title {
@@ -79,7 +83,7 @@
     &-image {
         display: block;
         width: 100%;
-        height: 320px;
+        height: auto;
 
         @include breakpoint(desktop) {
             display: block;

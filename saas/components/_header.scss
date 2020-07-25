@@ -1,6 +1,7 @@
 .logo {
     display: block;
     width: 100%;
+    height: auto;
 
     @include breakpoint(desktop) {
         width: 153px;
@@ -9,14 +10,22 @@
 }
 
 .header {
-    @media screen and (max-width: 767px) {
-        &-nav {
-            width: 100%;
+    &-nav {
+        @include centered-item;
+        justify-content: space-between;
+        width: 100%;
+
+
+        @media screen and (max-width: 767px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         @include breakpoint(tablet) {
             @include centered-item;
+            height: 100%;
         }
+
     }
 }
 
@@ -48,7 +57,7 @@
     }
 
     &-button {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 40px;
@@ -95,6 +104,7 @@
 .main-nav {
     @include centered-item;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
 
     @media screen and (max-width: 767px) {
@@ -104,6 +114,7 @@
 
     @include breakpoint(tablet) {
         @include centered-item;
+        flex-direction: row;
     }
 }
 
@@ -290,7 +301,7 @@
     width: 100%;
     z-index: 9999;
 
-    min-height: $fixed-header-mobile;
+    height: $fixed-header-mobile;
 
     background-color: $primary-white-color;
     border-bottom: 1px solid #ececec;
@@ -298,6 +309,6 @@
     @media screen and (max-width: 767px) {}
 
     @include breakpoint(tablet) {
-        min-height: $fixed-header-tablet;
+        height: $fixed-header-tablet;
     }
 }
