@@ -86,22 +86,22 @@
         background-position: center;
         background-size: cover;
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1140px),
-        only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1140px),
-        only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1140px),
-        only screen and (min-device-pixel-ratio: 2) and (max-width: 1140px),
-        only screen and (min-resolution: 192dpi) and (max-width: 1140px),
-        only screen and (min-resolution: 2dppx) and (max-width: 1140px) {
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1200px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1200px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1200px),
+        only screen and (min-device-pixel-ratio: 2) and (max-width: 1200px),
+        only screen and (min-resolution: 192dpi) and (max-width: 1200px),
+        only screen and (min-resolution: 2dppx) and (max-width: 1200px) {
             @include webp-background($img: 'header-desktop@2x');
 
         }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 1140px),
-        only screen and (min--moz-device-pixel-ratio: 3) and (max-width: 1140px),
-        only screen and (-o-min-device-pixel-ratio: 3/1) and (max-width: 1140px),
-        only screen and (min-device-pixel-ratio: 3) and (max-width: 1140px),
-        only screen and (min-resolution: 288dpi) and (max-width: 1140px),
-        only screen and (min-resolution: 3dppx) and (max-width: 1140px) {
+        @media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 1200px),
+        only screen and (min--moz-device-pixel-ratio: 3) and (max-width: 1200px),
+        only screen and (-o-min-device-pixel-ratio: 3/1) and (max-width: 1200px),
+        only screen and (min-device-pixel-ratio: 3) and (max-width: 1200px),
+        only screen and (min-resolution: 288dpi) and (max-width: 1200px),
+        only screen and (min-resolution: 3dppx) and (max-width: 1200px) {
             @include webp-background($img: 'header-desktop@3x');
 
         }

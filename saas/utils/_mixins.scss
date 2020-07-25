@@ -23,7 +23,7 @@
 // Add breakpoints
 @mixin breakpoint($point) {
     @if $point==desktop {
-        @media only screen and (min-width: 1170px) {
+        @media only screen and (min-width: 1200px) {
             @content;
         }
     }

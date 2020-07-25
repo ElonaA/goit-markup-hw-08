@@ -76,7 +76,7 @@
         overflow: hidden;
         color: $primary-title-color;
 
-        @media screen and (min-width: 767px) and (max-width: 1140px) {
+        @media screen and (min-width: 767px) and (max-width: 1199px) {
             white-space: nowrap;
             text-overflow: ellipsis;
         }
